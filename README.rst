@@ -13,6 +13,9 @@ This project refers to [erickrf/autoencoder](https://github.com/erickrf/autoenco
 To have a bash shell
 
     $ docker-compose run gpu
+    $ ./train.sh
+    $ ./transform.sh
+
 
 ## CPU
 

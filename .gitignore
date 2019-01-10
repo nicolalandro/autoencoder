@@ -2,4 +2,4 @@
 .idea
 prepared_data
 saved_model
-venv
+output.npy

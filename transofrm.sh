@@ -1,0 +1,1 @@
+python src/codify-sentences.py saved_model/ input_data.txt  prepared_data/vocabulary.txt output
