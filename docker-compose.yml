@@ -8,6 +8,14 @@ services:
     - .:/home/project
     working_dir: /home/project
     command: bash
+  tf-gpu-train:
+    image: tensorflow/tensorflow:1.11.0-gpu-py3
+    runtime: nvidia
+    volumes:
+      - .:/home/project
+    working_dir: /home/project
+    command: ./train.sh
+
   tf:
     image: tensorflow/tensorflow:1.11.0-py3
     volumes:

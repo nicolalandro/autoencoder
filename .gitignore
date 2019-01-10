@@ -1,2 +1,4 @@
 *.pyc
 .idea
+prepared_data
+saved_model
