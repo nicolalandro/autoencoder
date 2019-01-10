@@ -1,28 +1,35 @@
 version: '2.3'
 
 services:
-  tf-gpu:
+  gpu:
     image: tensorflow/tensorflow:1.11.0-gpu-py3
     runtime: nvidia
     volumes:
     - .:/home/project
     working_dir: /home/project
     command: bash
-  tf-gpu-train:
+  gpu-train:
     image: tensorflow/tensorflow:1.11.0-gpu-py3
     runtime: nvidia
     volumes:
       - .:/home/project
     working_dir: /home/project
     command: ./train.sh
+  gpu-interactive:
+    image: tensorflow/tensorflow:1.11.0-gpu-py3
+    runtime: nvidia
+    volumes:
+      - .:/home/project
+    working_dir: /home/project
+    command: ./interact.sh
 
-  tf:
+  cpu:
     image: tensorflow/tensorflow:1.11.0-py3
     volumes:
     - .:/home/project
     working_dir: /home/project
     command: bash
-  tf-train:
+  cpu-train:
     image: tensorflow/tensorflow:1.11.0-py3
     volumes:
     - .:/home/project
