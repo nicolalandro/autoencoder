@@ -22,3 +22,8 @@ To have a bash shell
 To have a bash shell
 
     $ docker-compose run cpu
+
+# Webscaper data
+Using [webscreper.io](https://addons.mozilla.org/en-US/firefox/addon/web-scraper/?src=search) on firefox it is possible to scrape web for data.
+In that folder there are a sitemap exported, and the csv result.
+With script scraped_title_to_list_file.py it is possible to write title column of csv into input_data.txt

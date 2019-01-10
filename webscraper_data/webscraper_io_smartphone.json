@@ -1,0 +1,1 @@
+{"_id":"tp_title","startUrl":["https://www.trovaprezzi.it/prezzi_cellulari_[1-20].aspx"],"selectors":[{"id":"title","type":"SelectorText","parentSelectors":["_root"],"selector":"a.item_name p","multiple":true,"regex":"","delay":0}]}
