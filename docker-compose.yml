@@ -15,7 +15,7 @@ services:
       - .:/home/project
     working_dir: /home/project
     command: ./train.sh
-  gpu-interactive:
+  gpu-interact:
     image: tensorflow/tensorflow:1.11.0-gpu-py3
     runtime: nvidia
     volumes:
@@ -35,3 +35,9 @@ services:
     - .:/home/project
     working_dir: /home/project
     command: ./train.sh
+  cpu-interact:
+    image: tensorflow/tensorflow:1.11.0-py3
+    volumes:
+      - .:/home/project
+    working_dir: /home/project
+    command: ./interact.sh
