@@ -1,9 +1,8 @@
-Text Autoencoder
-================
+# Text Autoencoder
 
 This project refers to [erickrf/autoencoder](https://github.com/erickrf/autoencoder)
 
-# Samle Usage
+# Sample Usage
 
 ## GPU
 
